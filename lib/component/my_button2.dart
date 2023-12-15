@@ -17,7 +17,7 @@ class MyButton2 extends StatelessWidget {
               },
 
       child: Container(
-        padding: const EdgeInsets.all(13),
+        padding: const EdgeInsets.all(12),
         decoration: ShapeDecoration (
           color: Color(0xFFFAFAFA),
           shape: RoundedRectangleBorder(

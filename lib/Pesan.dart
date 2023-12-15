@@ -30,7 +30,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(backgroundColor: Colors.grey[200],
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: Text('Kontak Saya'),
+        centerTitle: true,
+        title: Text('Pesan'),
         actions: [
           //sign out button
           IconButton(
@@ -69,18 +70,24 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildUserListItem(DocumentSnapshot document) {
     Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+    
+
 
     //display all users except current user
     if (_auth.currentUser!.email != data['email']) {
+      
       return ListTile(
-        title: Text( data['email']),
+        leading: CircleAvatar(backgroundImage: NetworkImage('https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg'),),
+        subtitle: Text(data['email']),
+        title: Text( data['namaPengguna']),
         onTap: () {
           //pass the clicked user's UID to the chat page
           Navigator.push(
             context,
             MaterialPageRoute(
+              //Mengirim data file firebase Colecction users yaitu "namaPengguna" dan uid ke Colection Chat_Room
               builder: (context) => ChatPage(
-                receiverUserEmail: data['email'],
+                receiverUserEmail: data['namaPengguna'],
                 receiverUserID: data['uid'],
               ),
             ),

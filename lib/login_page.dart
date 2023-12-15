@@ -147,16 +147,16 @@ class _LoginPageState extends State<LoginPage> {
                     MyButton(onTap: signIn, text: 'MASUK'),
                     const SizedBox(height: 20),
                     SizedBox(
-                      child: Container(
-                        decoration: const ShapeDecoration(
-                            shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                          width: 1,
-                          strokeAlign: BorderSide.strokeAlignCenter,
-                          color: Color(0xFFEAEAEA),
-                        ))),
-                      ),
-                    ),
+                          child: Container(
+                            decoration: const ShapeDecoration(
+                                shape: RoundedRectangleBorder(
+                                    side: BorderSide(
+                              width: 1,
+                              strokeAlign: BorderSide.strokeAlignCenter,
+                              color: Color(0xFFEAEAEA),
+                            ))),
+                          ),
+                        ),
                      const SizedBox(height: 20),
                     MyButton2(text: 'Login With Google', image: AssetImage('assets/googlelogo.png') ),
                     const SizedBox(height: 20),

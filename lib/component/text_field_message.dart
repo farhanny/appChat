@@ -14,11 +14,14 @@ class MyTextField2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:EdgeInsets.only(bottom: 2,top: 2, left: 3, right: 2), height: 55 ,
+      padding:EdgeInsets.only(bottom: 8,top: 2, left: 10, right: 10), height: 62 ,
       child: TextField(
+        
         controller: controller,
         obscureText: obscureText,
         decoration: InputDecoration(
+          prefixIcon: Icon(Icons.emoji_emotions),
+          suffixIcon: Icon(Icons.camera_alt),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(28),
             borderSide: BorderSide(color: Color(0xFFEAEAEA), width: 2),

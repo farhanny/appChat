@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_application_message/component/searchingbar.dart';
-import 'package:flutter_application_message/home_page.dart';
+import 'package:flutter_application_message/Pesan.dart';
 import 'package:flutter_application_message/services/auth/auth_service.dart';
 import 'package:provider/provider.dart';
 
@@ -88,8 +88,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ListTile(
                   leading: CircleAvatar(
                       radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg')),
+                      backgroundImage: AssetImage(
+                          'assets/unand.png')),
                   title: const Text(
                     'Universitas Andalas',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -101,8 +101,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   trailing: Icon(Icons.arrow_right),
                   leading: CircleAvatar(
                       radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg')),
+                      backgroundImage: AssetImage(
+                          'assets/sma2.png')),
                   title: const Text(
                     'SMA 2 Padang',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -113,8 +113,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   trailing: Icon(Icons.arrow_right),
                   leading: CircleAvatar(
                       radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg')),
+                      backgroundImage: AssetImage(
+                          'assets/smp2.png')),
                   title: const Text(
                     'SMP 2 Padang',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -125,10 +125,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   trailing: Icon(Icons.arrow_right),
                   leading: CircleAvatar(
                       radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg')),
+                      backgroundImage: AssetImage(
+                          'assets/sd.png')),
                   title: const Text(
-                    'SD Negeri 2 Padang',
+                    'SD 03 Alai Padang',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text('ini adalah subtitle nya'),

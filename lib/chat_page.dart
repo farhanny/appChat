@@ -38,6 +38,15 @@ class _ChatPageState extends State<ChatPage> {
     return Scaffold(
       backgroundColor: Color(0xFFF19F6D),
       appBar: AppBar(
+        actions: [ IconButton(
+                onPressed: () {
+                },
+                icon: Icon(Icons.phone)),
+                
+                IconButton(
+                onPressed: () {
+                },
+                icon: Icon(Icons.videocam)),],
         backgroundColor: Color(0xFFF19F6D),
         title: Text(widget.receiverUserEmail),
       ),

@@ -82,12 +82,10 @@ class _MyWidSuccessRegister extends State<SuccessRegister> {
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
-              SizedBox(height: 230),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  MyButton2(text: ' Chat Now', image: AssetImage('assets/splash.png')),
-                ],
+              SizedBox(height: 200),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: MyButton2(text: ' Chat Now', image: AssetImage('assets/splash.png')),
               )
             ],
           ),
