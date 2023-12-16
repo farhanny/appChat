@@ -36,20 +36,29 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF19F6D),
+      backgroundColor: Color(0xFFF5F5DC),
       appBar: AppBar(
-        actions: [ IconButton(
-                onPressed: () {
-                },
-                icon: Icon(Icons.phone)),
-                
-                IconButton(
-                onPressed: () {
-                },
-                icon: Icon(Icons.videocam)),],
-        backgroundColor: Color(0xFFF19F6D),
-        title: Text(widget.receiverUserEmail),
-      ),
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.videocam)),
+          ],
+          backgroundColor: Color(0xFFED7D3A),
+          title: Column(
+            
+            children: [
+              ListTile(
+                  title: Text(widget.receiverUserEmail, style: TextStyle(color: Colors.white),),
+                  subtitle: Text(
+                    'Last Login 12.10', style: TextStyle(color: Colors.white60),
+                  ),
+                  leading: CircleAvatar(
+                    backgroundImage: NetworkImage('https://i.pinimg.com/736x/f0/e6/cc/f0e6ccfee2775550833bd19e11d04fc2.jpg'),
+                    radius: 21,
+                  ))
+            ],
+          )
+          //Text(widget.receiverUserEmail),
+          ),
       body: Column(
         children: [
           //messages
@@ -99,13 +108,14 @@ class _ChatPageState extends State<ChatPage> {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          crossAxisAlignment: 
-          (data['senderId'] == _firebaseAuth.currentUser!.uid)
-          ? CrossAxisAlignment.end
-          : CrossAxisAlignment.start,
+          crossAxisAlignment:
+              (data['senderId'] == _firebaseAuth.currentUser!.uid)
+                  ? CrossAxisAlignment.end
+                  : CrossAxisAlignment.start,
           mainAxisAlignment:
-           (data['senderId'] == _firebaseAuth.currentUser!.uid)
-           ? MainAxisAlignment.end : MainAxisAlignment.start,
+              (data['senderId'] == _firebaseAuth.currentUser!.uid)
+                  ? MainAxisAlignment.end
+                  : MainAxisAlignment.start,
           children: [
             // Text(data['senderEmail']),
             ChatBubble(message: data['message']),
@@ -129,12 +139,17 @@ class _ChatPageState extends State<ChatPage> {
         ),
 
         //send button
-        IconButton(
-          onPressed: sendMessage,
-          icon: Icon(
-            Icons.send_rounded,
-            size: 35,
-            color: Colors.white,
+        CircleAvatar(
+          radius: 22,
+          backgroundColor: Color(0xFFED7D3A),
+          child: IconButton(
+            padding: EdgeInsets.only(left: 4),
+            onPressed: sendMessage,
+            icon: Icon(
+              Icons.send_rounded,
+              size: 25,
+              color: Colors.white,
+            ),
           ),
         ),
       ],

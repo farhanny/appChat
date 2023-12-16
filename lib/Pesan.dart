@@ -77,9 +77,13 @@ class _HomePageState extends State<HomePage> {
     if (_auth.currentUser!.email != data['email']) {
       
       return ListTile(
+        
         leading: CircleAvatar(backgroundImage: NetworkImage('https://cdn.idntimes.com/content-images/post/20230515/gambar-profil-wa-keren-41d3732660868cf4a36d801d1301f672.jpg'),),
         subtitle: Text(data['email']),
         title: Text( data['namaPengguna']),
+        tileColor: Colors.orange[300],
+        trailing: Icon(Icons.arrow_right),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25), side: BorderSide(width: 6, color: Colors.grey.shade200)),
         onTap: () {
           //pass the clicked user's UID to the chat page
           Navigator.push(
