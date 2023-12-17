@@ -70,7 +70,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ),
                 ),
                 SizedBox(height: 20),
-                MySeachBar(controller: searchcontroller, hinText: 'Cari Disini', obscureText: false),
+                MySeachBar(controller: searchcontroller, hinText: 'Cari disini cuman ada aku', obscureText: false),
                 // SearchBar2(
                 //     controller: searchcontroller,
                 //     hinText: 'Cari Disini...',
@@ -94,7 +94,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     'Universitas Andalas',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  subtitle: Text('ini adalah subtitle nya'),
+                  subtitle: Text('S-1 Teknik Elektro'),
                   trailing: Icon(Icons.arrow_right),
                 ),
                 ListTile(
@@ -107,7 +107,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     'SMA 2 Padang',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  subtitle: Text('ini adalah subtitle nya'),
+                  subtitle: Text('Jurusan MIPA'),
                 ),
                 ListTile(
                   trailing: Icon(Icons.arrow_right),

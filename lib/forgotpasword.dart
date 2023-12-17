@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_message/component/my_button.dart';
+import 'package:flutter_application_message/component/my_text_field.dart';
 
 class LupaPasswordScreen extends StatefulWidget {
   const LupaPasswordScreen({Key? key}) : super(key: key);
@@ -50,37 +52,62 @@ class _LupaPasswordScreenState extends State<LupaPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xFFF5F5DC),
       appBar: AppBar(
-        title: Text('Forgot Password'),
+        elevation: 0,
+        backgroundColor: Color(0xFFF5F5DC),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.lock,
-              size: 80,
-              color: Colors.blue,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Image(
+            image: AssetImage('assets/forgotpassword2.png'),
+            height: 300,
+          ),
+          SizedBox(height: 60),
+          Padding(
+            padding:  const EdgeInsets.only(left: 25, right: 25),
+            child: Row(
+              children: [
+                Text('Forgot Password?', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),),
+              ],
             ),
-            SizedBox(height: 16),
-            TextField(
-              controller: _emailController,
-              decoration: InputDecoration(
-                labelText: 'Email',
-                prefixIcon: Icon(Icons.email),
-              ),
+          ),
+          SizedBox(height: 10),
+          Padding(
+            padding:  const EdgeInsets.only(left: 25, right: 25),
+            child: Row(
+              children: [
+                Text('Don’t worry ! It happens. Please enter the phone \nnumber we will send the OTP in this phone number.', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),),
+              ],
             ),
-            SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: _resetPassword,
-              child: Text('Reset Password'),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.blue,
-              ),
+          ),
+          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MyTextField(
+                    controller: _emailController,
+                    hinText: 'Masukkan Email Anda',
+                    obscureText: false,
+                    prefixIcon: Icon(Icons.email),
+                    suffixIcon: null),
+                SizedBox(height: 20),
+                MyButton(onTap: _resetPassword, text: 'Reset Password')
+                // ElevatedButton(
+                //   onPressed: _resetPassword,
+                //   child: Text('Reset Password'),
+                //   style: ElevatedButton.styleFrom(
+                //     primary: Colors.blue,
+                //   ),
+                // ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

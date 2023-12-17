@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_message/travelhomepage.dart';
+import 'package:flutter_application_message/testingPage/profile.dart';
 
 class MyButton2 extends StatelessWidget {
   final String text;
@@ -12,12 +12,12 @@ class MyButton2 extends StatelessWidget {
      onTap: ()=>{
                 Navigator.push(
                 context, 
-                 MaterialPageRoute(builder: (context)=>  TravelHomePage()
+                 MaterialPageRoute(builder: (context)=>  Profile1()
                   )),
               },
 
       child: Container(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(10),
         decoration: ShapeDecoration (
           color: Color(0xFFFAFAFA),
           shape: RoundedRectangleBorder(
@@ -42,7 +42,7 @@ class MyButton2 extends StatelessWidget {
               style: const TextStyle(
                 color: Color(0xFFEB6E4E),
                 fontWeight: FontWeight.bold ,
-                fontSize: 17
+                fontSize: 16
               ),),
             ],
           ),
