@@ -43,8 +43,8 @@ dependencies:
   animate_do: ^3.1.2
   gradient_slider: ^1.0.1
   get_it: ^7.6.4
-  camera: ^0.10.5+7
-  location: ^5.0.3
+
+
 
   
 
