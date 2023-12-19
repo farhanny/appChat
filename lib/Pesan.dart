@@ -31,10 +31,11 @@ class _HomePageState extends State<HomePage> {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Pesan'),
+        title: Text('Pesan', style: TextStyle(color: Colors.white),),
         actions: [
           //sign out button
           IconButton(
+            color: Colors.white,
             onPressed: signOut,
             icon: const Icon(Icons.logout),
           )

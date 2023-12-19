@@ -43,7 +43,7 @@ class _MyWidSuccessRegister extends State<SuccessRegister> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: 100),
+                SizedBox(height: 85),
                 FadeIn(duration: Duration(milliseconds: 1000),
                   child: Image(
                     image: AssetImage('assets/succes.jpg'),
@@ -88,7 +88,13 @@ class _MyWidSuccessRegister extends State<SuccessRegister> {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
-                SizedBox(height: 200),
+                SizedBox(height: 30),
+                Text(
+                  'Gratz! You Got 🪙 300 Coin',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 17),
+                ),
+                SizedBox(height: 170),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: MyButton2(text: ' Chat Now', image: AssetImage('assets/splash.png')),

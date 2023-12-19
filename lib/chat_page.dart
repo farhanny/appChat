@@ -39,21 +39,21 @@ class _ChatPageState extends State<ChatPage> {
       backgroundColor: Color(0xFFF5F5DC),
       appBar: AppBar(
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.videocam)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.phone), color: Colors.white,),
+            IconButton(onPressed: () {}, icon: Icon(Icons.videocam), color: Colors.white,),
           ],
           backgroundColor: Color(0xFFED7D3A),
           title: Column(
             
             children: [
               ListTile(
-                  title: Text(widget.receiverUserEmail, style: TextStyle(color: Colors.white),),
+                  title: Text(widget.receiverUserEmail, style: TextStyle(color: Colors.white, height: 1),),
                   subtitle: Text(
                     'Last Login 12.10', style: TextStyle(color: Colors.white60),
                   ),
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage('https://i.pinimg.com/736x/f0/e6/cc/f0e6ccfee2775550833bd19e11d04fc2.jpg'),
-                    radius: 21,
+                    radius: 20,
                   ))
             ],
           )

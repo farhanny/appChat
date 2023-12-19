@@ -28,13 +28,21 @@ class _LoginPageState extends State<LoginPage> {
       await authService.signInWithEmailandPassword(
           emailcontroller.text, passwordControler.text);
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            e.toString(),
-          ),
-        ),
-      );
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text('Login Error'),
+              content: Text('Email Atau pasword Anda Salah'),
+              actions: <Widget>[
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Text('OK'))
+              ],
+            );
+          });
     }
   }
 
@@ -153,7 +161,6 @@ class _LoginPageState extends State<LoginPage> {
                           obscureText: true),
                       const SizedBox(height: 10),
                       GestureDetector(
-            
                           onTap: () => {
                                 Navigator.push(
                                     context,
