@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_message/camera/mainscreen.dart';
 
 class MyTextField2 extends StatelessWidget {
   final TextEditingController controller;
@@ -20,8 +21,13 @@ class MyTextField2 extends StatelessWidget {
         controller: controller,
         obscureText: obscureText,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.emoji_emotions),
-          suffixIcon: Icon(Icons.camera_alt),
+          prefixIcon: IconButton(onPressed: () {}, icon: Icon(Icons.emoji_emotions),),
+          suffixIcon: IconButton(onPressed: () {
+            Navigator.push(
+                context, 
+                 MaterialPageRoute(builder: (context)=>  MainScreen()
+                  ));
+          }, icon: Icon(Icons.camera_alt),),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(28),
             borderSide: BorderSide(color: Color(0xFFEAEAEA), width: 2),

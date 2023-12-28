@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC7m52s676XwYO3qd6CuF3aF2SWl33k_eU',
-    appId: '1:150704605983:web:72d6dfdea3bb581688fe2a',
-    messagingSenderId: '150704605983',
-    projectId: 'appchat-ab04e',
-    authDomain: 'appchat-ab04e.firebaseapp.com',
-    storageBucket: 'appchat-ab04e.appspot.com',
+    apiKey: 'AIzaSyAd0aeDEnHmjsR8XArbjPZVyyHgrmJjT14',
+    appId: '1:796438372620:web:5cccabd7983d016004a929',
+    messagingSenderId: '796438372620',
+    projectId: 'projectd-a2f3e',
+    authDomain: 'projectd-a2f3e.firebaseapp.com',
+    storageBucket: 'projectd-a2f3e.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDPzXVUkgrdyjSedIhLGTMuqBB54YxUFNc',
-    appId: '1:150704605983:android:5d44b33c16add55e88fe2a',
-    messagingSenderId: '150704605983',
-    projectId: 'appchat-ab04e',
-    storageBucket: 'appchat-ab04e.appspot.com',
+    apiKey: 'AIzaSyAyKo6gXb1zqizQNITHpD4e_c-uxfVDcDU',
+    appId: '1:796438372620:android:92fede88d89d1b0704a929',
+    messagingSenderId: '796438372620',
+    projectId: 'projectd-a2f3e',
+    storageBucket: 'projectd-a2f3e.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBK_bzTaiDbbUHzO1SqQyEBm_tjkNc3Lbg',
-    appId: '1:150704605983:ios:a4f0598d4c0cd60d88fe2a',
-    messagingSenderId: '150704605983',
-    projectId: 'appchat-ab04e',
-    storageBucket: 'appchat-ab04e.appspot.com',
+    apiKey: 'AIzaSyBor6sR7sPL7yu-18UF3kHZyvwV8HGgV-0',
+    appId: '1:796438372620:ios:08f4e5bc8809b38804a929',
+    messagingSenderId: '796438372620',
+    projectId: 'projectd-a2f3e',
+    storageBucket: 'projectd-a2f3e.appspot.com',
     iosBundleId: 'com.example.flutterApplicationMessage',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBK_bzTaiDbbUHzO1SqQyEBm_tjkNc3Lbg',
-    appId: '1:150704605983:ios:b48f121939cc6d9388fe2a',
-    messagingSenderId: '150704605983',
-    projectId: 'appchat-ab04e',
-    storageBucket: 'appchat-ab04e.appspot.com',
+    apiKey: 'AIzaSyBor6sR7sPL7yu-18UF3kHZyvwV8HGgV-0',
+    appId: '1:796438372620:ios:1ad4e776ec7088cb04a929',
+    messagingSenderId: '796438372620',
+    projectId: 'projectd-a2f3e',
+    storageBucket: 'projectd-a2f3e.appspot.com',
     iosBundleId: 'com.example.flutterApplicationMessage.RunnerTests',
   );
 }
