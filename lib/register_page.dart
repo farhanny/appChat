@@ -97,7 +97,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(height: 12),
                   SizedBox(
                     child: Text(
-                      'Selamat Datang ! Silahkan masukkan nama, email, password data diri anda untuk membuat akun',
+                      'Selamat Datanggg ! Silahkan masukkan nama, email, password data diri anda untuk membuat akun',
                       style: GoogleFonts.dmSans(
                         fontSize: 15,
                         fontWeight: FontWeight.w500,
