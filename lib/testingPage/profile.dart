@@ -58,12 +58,12 @@ class _Profile1State extends State<Profile1> {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                      color: Color(0xFFEB6E4E),
+                      color: Colors.amber,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(42),
                           bottomRight: Radius.circular(42)),
                       border: Border.all(width: 2, color: Color(0xFFEB6E4E))),
-                  child: const ListTile(
+                  child:  ListTile(
                     title: Text(' Hello 👋 Tuan Fharhan!',
                         style: TextStyle(
                             fontSize: 20,
@@ -83,6 +83,7 @@ class _Profile1State extends State<Profile1> {
                       ],
                     ),
                   ),
+
                 ),
 
 
@@ -219,13 +220,7 @@ class _Profile1State extends State<Profile1> {
               items: [
                 BottomNavigationBarItem(
                     icon: Icon(Icons.home_filled), label: 'Home'),
-                // BottomNavigationBarItem(
-                //   icon: Icon(
-                //     Icons.favorite_border,
-                //     color: Colors.black,
-                //   ),
-                //   label: 'Saved',
-                // ),
+             
                 BottomNavigationBarItem(
                     icon: Icon(Icons.chat_outlined, color: Colors.black),
                     label: 'Chating'),
